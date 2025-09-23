@@ -1,0 +1,99 @@
+.services {
+  padding: 8rem 5%;
+  background: var(--background-color);
+  text-align: center;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px var(--box-shadow-color);
+  padding: 2rem;
+  width: 45%; 
+  max-width: 400px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  margin-bottom: 1.5rem;
+}
+
+/* Logo image styling */
+.clubLogo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: #ffffff10; /* subtle contrast background */
+  padding: 8px;
+}
+
+/* Card content */
+.cardContent h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.cardContent p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clubLogo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .cardContent h3 {
+    font-size: 1.2rem;
+  }
+
+  .cardContent p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clubLogo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .cardContent h3 {
+    font-size: 1.1rem;
+  }
+
+  .cardContent p {
+    font-size: 0.9rem;
+  }
+}

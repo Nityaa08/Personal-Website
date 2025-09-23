@@ -1,0 +1,41 @@
+.skills {
+  padding: 8rem 5%;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Skill card styling */
+.skillCard {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px var(--box-shadow-color);
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  /* Make all cards equal size */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  user-select: none; /* prevents text selection on click/drag */
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  background-color: #2a2a2a;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  cursor: default;
+}
