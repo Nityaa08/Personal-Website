@@ -124,22 +124,6 @@
   }
 }
 
-/* Smaller Tablets and Large Phones */
-@media (max-width: 768px) {
-  .timelineItem {
-    padding-left: 50px;
-    margin-bottom: 2rem;
-  }
-
-  .timelineContent {
-    padding: 18px;
-  }
-
-  .timelineConnector {
-    width: 18px;
-  }
-}
-
 /* Small Phones */
 @media (max-width: 480px) {
   .timelineItem {
@@ -154,5 +138,21 @@
   .timelineConnector {
     width: 16px;
     left: 17px !important;
+  }
+}
+
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .timelineItem {
+    padding-left: 50px;
+    margin-bottom: 2rem;
+  }
+
+  .timelineContent {
+    padding: 18px;
+  }
+
+  .timelineConnector {
+    width: 18px;
   }
 }

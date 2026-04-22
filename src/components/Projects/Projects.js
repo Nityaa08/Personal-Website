@@ -25,14 +25,34 @@ const projects = [
     title: 'Employee Attrition Prediction',
     description: 'Developed a machine learning model to predict employee attrition using the IBM HR Analytics dataset. Enhanced prediction accuracy and interpretability by applying classification algorithms and SHAP-based feature importance analysis.',
     tech: ['Python', 'ML Models', 'Matplotlib'],
-    github: 'https://github.com/Nityaa08/employee-attrition/blob/main/employee-attrition.ipynb'
-  
+    github: 'https://github.com/Nityaa08/employee-attrition/blob/main/employee-attrition.ipynb',
   },
   {
     title: 'Personal Portfolio Website',
     description: 'Created and deployed a personal portfolio site using React and Bootstrap. The website showcases project links, certifications, and GitHub contributions.',
     tech: ['React', 'Bootstrap', 'JavaScript'],
     github: 'https://github.com/Nityaa08/Personal-Website',
+  },
+  {
+    title: 'Cross-Border Fee Calculation API',
+    description:
+      'REST API that calculates the true all-in customer price for cross-border B2B transactions across Latin America, factoring in FX rates, local tax rules, and payment provider fees. Built with a clean separation between fee config and calculation engine — no magic numbers anywhere.',
+    tech: ['TypeScript', 'Node.js', 'Express'],
+    github: 'https://github.com/Nityaa08/cross-border-fee-api',
+  },
+  {
+    title: 'Transaction Pattern Explorer — Fraud Analytics Dashboard',
+    description:
+      'Frontend fraud analytics dashboard for risk analysts to visually identify suspicious transaction patterns. Features interactive filtering, time-series charts, anomaly detection, drill-down on flagged transactions, and a suspicious patterns panel with summary insights.',
+    tech: ['Next.js', 'React', 'TypeScript', 'JavaScript'],
+    github: 'https://github.com/Nityaa08/zara-fraud-dashboard',
+  },
+  {
+    title: 'Meridian — Multi-Agent Research Intelligence API',
+    description:
+      '5-agent async pipeline that decomposes a research query into sub-questions, searches Wikipedia, arXiv, and DuckDuckGo in parallel, ranks passages by semantic similarity, detects source contradictions via a dedicated Critic agent, and streams a structured report live via SSE.',
+    tech: ['Python', 'FastAPI', 'asyncio', 'Groq API', 'SQLAlchemy', 'NumPy'],
+    github: 'https://github.com/Nityaa08/Coding-Challenge-Yuno',
   },
 ];
 

@@ -105,6 +105,9 @@
   100% {
     left: 150%;
   }
+  .tagline {
+    font-size: 1.2rem;
+  }
 }
 
 .tagline {
@@ -135,8 +138,5 @@
 @media (max-width: 480px) {
   .heroWord {
     font-size: 3.3rem;
-  }
-  .tagline {
-    font-size: 1.2rem;
   }
 }

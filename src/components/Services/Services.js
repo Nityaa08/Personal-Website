@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import styles from './Services.module.css';
 import daksh from './daksh.jpeg';
 import ks from './ks.png';
-import azure from './azure.jpeg';      
-import pwc from './pwc.png';          
+import azure from './azure.jpeg';
+import pwc from './pwc.png';
+import yuno from './yuno.png';
 
 const contributions = [
   {
@@ -26,7 +27,13 @@ const contributions = [
     title: 'PwC Data Analytics and AI Launchpad',
     description: 'Participated in the PwC Launchpad Program, focusing on data analytics and AI to solve real-world business challenges.',
     icon: pwc
-  }
+  },
+  {
+    title: 'Yuno Payments Internship',
+    description:
+      'Worked as a Payments Analyst Intern at Yuno, managing the payments database and collaborating with cross-functional teams.',
+    icon: yuno,
+  },
 ];
 
 const Services = () => {

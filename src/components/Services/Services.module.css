@@ -77,13 +77,6 @@
   .cardContent p {
     font-size: 0.95rem;
   }
-}
-
-@media (max-width: 480px) {
-  .clubLogo {
-    width: 70px;
-    height: 70px;
-  }
 
   .card {
     padding: 1.2rem;
@@ -95,5 +88,12 @@
 
   .cardContent p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clubLogo {
+    width: 70px;
+    height: 70px;
   }
 }
