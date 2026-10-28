@@ -39,7 +39,7 @@ const About = () => {
           whileHover={{ scale: 1.02 }}
         >
           <p>
-            I’m Nityashree, a final-year AI & Data Science student who is passionate about building impactful applications. With experience in web development, and a strong foundation in machine learning and data analysis, I love creating solutions that solve real-world problems. Whether it’s developing predictive models or crafting seamless user experiences, I’m always exploring new ways to combine my skills and make a difference.
+            I’m Nityashree, an AI Engineer on the AI Team at Yuno, a payments company. I build AI agents that act on real systems: the tools and connectors they call, the guardrails around them, and the evals that tell us whether a model change is worth it. I started at Yuno as a Payments Analyst Intern, so I bring payments knowledge to every agent I build. I studied Computer Science with a specialization in AI & Data Science at SASTRA University.
           </p>
         </motion.div>
       </div>

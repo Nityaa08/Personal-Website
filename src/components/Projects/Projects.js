@@ -4,34 +4,18 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
-    title: 'AI Image Caption Generator',
-    description: 'Designed a CNN-LSTM model to generate captions from images using the Flikr8k dataset. Improved sequence quality and contextual accuracy by integrating a pretrained BLIP Model.',
-    tech: ['Python', 'NLP', 'TensorFlow'],
-    github: 'https://github.com/Nityaa08/image-captioning',
+    title: 'Meridian — Multi-Agent Research Intelligence API',
+    description:
+      '5-agent async pipeline that decomposes a research query into sub-questions, searches Wikipedia, arXiv, and DuckDuckGo in parallel, ranks passages by semantic similarity, detects source contradictions via a dedicated Critic agent, and streams a structured report live via SSE.',
+    tech: ['Python', 'FastAPI', 'asyncio', 'Groq API', 'SQLAlchemy', 'NumPy'],
+    github: 'https://github.com/Nityaa08/meridian',
   },
   {
-    title: 'IMDB Review Sentiment Classifier',
-    description: 'Built a binary classifier using LSTM and Bi-LSTM on over 50,000 reviews. The model can make real-time predictions for text sentiment classification.',
-    tech: ['Python', 'NLP', 'LSTM'],
-    github: 'https://github.com/Nityaa08/IMDB-analysis',
-  },
-  {
-    title: 'COVID-19 EDA',
-    description: 'Analyzed over 100,000 COVID-19 records with Pandas and Seaborn. Identified socioeconomic correlations with case trends to provide data-driven insights.',
-    tech: ['Python', 'Pandas', 'Seaborn'],
-    github: 'https://github.com/Nityaa08/Covid-EDA',
-  },
-  {
-    title: 'Employee Attrition Prediction',
-    description: 'Developed a machine learning model to predict employee attrition using the IBM HR Analytics dataset. Enhanced prediction accuracy and interpretability by applying classification algorithms and SHAP-based feature importance analysis.',
-    tech: ['Python', 'ML Models', 'Matplotlib'],
-    github: 'https://github.com/Nityaa08/employee-attrition/blob/main/employee-attrition.ipynb',
-  },
-  {
-    title: 'Personal Portfolio Website',
-    description: 'Created and deployed a personal portfolio site using React and Bootstrap. The website showcases project links, certifications, and GitHub contributions.',
-    tech: ['React', 'Bootstrap', 'JavaScript'],
-    github: 'https://github.com/Nityaa08/Personal-Website',
+    title: 'Smart Router — LLM Cost-Control Gateway',
+    description:
+      'OpenAI-compatible gateway that classifies each prompt with zero-cost heuristic rules and routes it to the cheapest capable model. Logs cost, latency and routing tier per request in PostgreSQL, serves repeated prompts from a Redis cache, and shows the savings on a live dashboard.',
+    tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
+    github: 'https://github.com/Nityaa08/smart-router',
   },
   {
     title: 'Cross-Border Fee Calculation API',
@@ -44,15 +28,38 @@ const projects = [
     title: 'Transaction Pattern Explorer — Fraud Analytics Dashboard',
     description:
       'Frontend fraud analytics dashboard for risk analysts to visually identify suspicious transaction patterns. Features interactive filtering, time-series charts, anomaly detection, drill-down on flagged transactions, and a suspicious patterns panel with summary insights.',
-    tech: ['Next.js', 'React', 'TypeScript', 'JavaScript'],
-    github: 'https://github.com/Nityaa08/zara-fraud-dashboard',
+    tech: ['Next.js', 'React', 'TypeScript'],
+    github: 'https://github.com/Nityaa08/fraud-pattern-explorer',
   },
   {
-    title: 'Meridian — Multi-Agent Research Intelligence API',
-    description:
-      '5-agent async pipeline that decomposes a research query into sub-questions, searches Wikipedia, arXiv, and DuckDuckGo in parallel, ranks passages by semantic similarity, detects source contradictions via a dedicated Critic agent, and streams a structured report live via SSE.',
-    tech: ['Python', 'FastAPI', 'asyncio', 'Groq API', 'SQLAlchemy', 'NumPy'],
-    github: 'https://github.com/Nityaa08/Coding-Challenge-Yuno',
+    title: 'AI Image Caption Generator',
+    description: 'Designed a CNN-LSTM model to generate captions from images using the Flickr8k dataset. Improved sequence quality and contextual accuracy by integrating a pretrained BLIP Model.',
+    tech: ['Python', 'NLP', 'TensorFlow'],
+    github: 'https://github.com/Nityaa08/image-captioning',
+  },
+  {
+    title: 'IMDB Review Sentiment Classifier',
+    description: 'Built a binary classifier using LSTM and Bi-LSTM on over 50,000 reviews. The model can make real-time predictions for text sentiment classification.',
+    tech: ['Python', 'NLP', 'LSTM'],
+    github: 'https://github.com/Nityaa08/IMDB-analysis',
+  },
+  {
+    title: 'Employee Attrition Prediction',
+    description: 'Developed a machine learning model to predict employee attrition using the IBM HR Analytics dataset. Enhanced prediction accuracy and interpretability by applying classification algorithms and SHAP-based feature importance analysis.',
+    tech: ['Python', 'ML Models', 'Matplotlib'],
+    github: 'https://github.com/Nityaa08/employee-attrition/blob/main/employee-attrition.ipynb',
+  },
+  {
+    title: 'COVID-19 EDA',
+    description: 'Analyzed over 100,000 COVID-19 records with Pandas and Seaborn. Identified socioeconomic correlations with case trends to provide data-driven insights.',
+    tech: ['Python', 'Pandas', 'Seaborn'],
+    github: 'https://github.com/Nityaa08/Covid-EDA',
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description: 'Created and deployed this portfolio site with React, CSS Modules and Framer Motion animations. It showcases my experience, projects and contact links.',
+    tech: ['React', 'TypeScript', 'Framer Motion'],
+    github: 'https://github.com/Nityaa08/Personal-Website',
   },
 ];
 

@@ -9,6 +9,18 @@ import yuno from './yuno.png';
 
 const contributions = [
   {
+    title: 'AI Engineer — Yuno (June 2026 – present)',
+    description:
+      'Build and run AI agents for payments on Yuno’s agent platform: tool connectors, guardrails, evals and LLM cost. I ship across Go, TypeScript and Python services, working with AI coding agents.',
+    icon: yuno,
+  },
+  {
+    title: 'Payments Analyst Intern — Yuno (Dec 2025 – June 2026)',
+    description:
+      'Managed the payments database and worked with cross-functional teams on payment operations.',
+    icon: yuno,
+  },
+  {
     title: 'Technotainment Club',
     description: 'Led logistics for multiple technical events with 500+ participants and managed the team to ensure successful execution.',
     icon: daksh
@@ -28,12 +40,6 @@ const contributions = [
     description: 'Participated in the PwC Launchpad Program, focusing on data analytics and AI to solve real-world business challenges.',
     icon: pwc
   },
-  {
-    title: 'Yuno Payments Internship',
-    description:
-      'Worked as a Payments Analyst Intern at Yuno, managing the payments database and collaborating with cross-functional teams.',
-    icon: yuno,
-  },
 ];
 
 const Services = () => {
@@ -44,7 +50,7 @@ const Services = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        Involvement & Leadership
+        Experience & Involvement
       </motion.h2>
       <div className={styles.cardsContainer}>
         {contributions.map((item, index) => (

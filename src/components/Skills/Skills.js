@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './Skills.module.css';
 
 const skills = [
-  'Python', 'Java', 'C++', 'C', 'SQL', 'HTML', 'CSS', 'JavaScript', 'Bootstrap','NLP', 'Machine Learning', 'AI', 'Data Analysis', 'MS Excel', 'LLMs'
+  'AI Agents', 'LLMs', 'Tool Calling & MCP', 'Evals', 'Python', 'FastAPI', 'SQL', 'PostgreSQL', 'Redis', 'Docker', 'JavaScript', 'React', 'Machine Learning', 'NLP', 'Data Analysis', 'Java', 'C++'
 ];
 
 const Skills = () => {

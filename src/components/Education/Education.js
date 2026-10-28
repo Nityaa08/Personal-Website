@@ -10,7 +10,7 @@ const timelineEvents = [
     title: 'B.Tech in Computer Science (AI & DS)',
     institution: 'SASTRA University, Tanjore',
     details:
-      'Final year student with a strong foundation in software development, machine learning, and web development. Specializing in AI & Data Science.',
+      'Specialized in AI & Data Science, with coursework in machine learning, software development and web development.',
   },
   {
     year: 'Graduated 2022',

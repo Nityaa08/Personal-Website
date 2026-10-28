@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import styles from './Contact.module.css';
 
 const contactLinks = [
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/nityashree-s-b34b1b291', icon: faLinkedin },
-  { name: 'Instagram', url: 'https://www.instagram.com/i_nitya08shree?utm_source=qr&igsh=Mzk0dDZoaWJqem9l', icon: faInstagram },
   { name: 'Email', url: 'mailto:nitya08shree@gmail.com', icon: faEnvelope },
   { name: 'Github', url: 'https://github.com/Nityaa08', icon: faGithub },
 ];
