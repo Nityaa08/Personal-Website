@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Cross-Border Fee Calculation API',
     description:
-      'REST API that gives an itemised estimate of the all-in customer price for cross-border B2B payments in Latin America: FX spread, local taxes and provider fees, from configured, dated rates kept separate from the calculation engine.',
+      'REST API that gives an itemised estimate of the all-in customer price for cross-border B2B payments in Latin America: FX spread, local taxes and provider fees, from configured rates kept separate from the calculation engine.',
     tech: ['TypeScript', 'Node.js', 'Express'],
     github: 'https://github.com/Nityaa08/cross-border-fee-api',
   },
