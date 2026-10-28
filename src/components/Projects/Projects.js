@@ -6,28 +6,28 @@ const projects = [
   {
     title: 'Meridian — Multi-Agent Research Intelligence API',
     description:
-      '5-agent async pipeline that decomposes a research query into sub-questions, searches Wikipedia, arXiv, and DuckDuckGo in parallel, ranks passages by semantic similarity, detects source contradictions via a dedicated Critic agent, and streams a structured report live via SSE.',
+      'Five-stage research pipeline: an LLM splits a question into sub-questions, searches run concurrently, local embeddings rank the passages, an LLM critic notes gaps and contradictions, and the report streams live over SSE.',
     tech: ['Python', 'FastAPI', 'asyncio', 'Groq API', 'SQLAlchemy', 'NumPy'],
     github: 'https://github.com/Nityaa08/meridian',
   },
   {
     title: 'Smart Router — LLM Cost-Control Gateway',
     description:
-      'OpenAI-compatible gateway that classifies each prompt with zero-cost heuristic rules and routes it to the cheapest capable model. Logs cost, latency and routing tier per request in PostgreSQL, serves repeated prompts from a Redis cache, and shows the savings on a live dashboard.',
+      'OpenAI-compatible gateway that routes each prompt to one of three model tiers using hand-written rules. Logs tokens, estimated cost, latency and tier per request in PostgreSQL, and serves repeated prompts from a Redis cache.',
     tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
     github: 'https://github.com/Nityaa08/smart-router',
   },
   {
     title: 'Cross-Border Fee Calculation API',
     description:
-      'REST API that calculates the true all-in customer price for cross-border B2B transactions across Latin America, factoring in FX rates, local tax rules, and payment provider fees. Built with a clean separation between fee config and calculation engine — no magic numbers anywhere.',
+      'REST API that gives an itemised estimate of the all-in customer price for cross-border B2B payments in Latin America: FX spread, local taxes and provider fees, from configured, dated rates kept separate from the calculation engine.',
     tech: ['TypeScript', 'Node.js', 'Express'],
     github: 'https://github.com/Nityaa08/cross-border-fee-api',
   },
   {
     title: 'Transaction Pattern Explorer — Fraud Analytics Dashboard',
     description:
-      'Frontend fraud analytics dashboard for risk analysts to visually identify suspicious transaction patterns. Features interactive filtering, time-series charts, anomaly detection, drill-down on flagged transactions, and a suspicious patterns panel with summary insights.',
+      'Fraud analytics dashboard for risk analysts, built on synthetic data: interactive filters, time-series charts, rule-based pattern flags and drill-down on flagged transactions.',
     tech: ['Next.js', 'React', 'TypeScript'],
     github: 'https://github.com/Nityaa08/fraud-pattern-explorer',
   },
