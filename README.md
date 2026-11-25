@@ -1,8 +1,8 @@
-# Nityashree S — portfolio
+# Nityashree S — earlier portfolio (React)
 
-Live site: https://personal-website-rgag.vercel.app
+**My current portfolio is [nityashree.in](https://nityashree.in).** This repo is the earlier React version, still live at https://personal-website-rgag.vercel.app.
 
-My personal portfolio: who I am (AI Engineer on the AI Team at Yuno), my experience, skills, education and projects.
+It covers who I am (AI Engineer on the AI Team at Yuno), my experience, skills, education and projects, with links to the live demos of my recent projects.
 
 ## Built with
 
@@ -15,6 +15,7 @@ My personal portfolio: who I am (AI Engineer on the AI Team at Yuno), my experie
 ```bash
 npm install
 npm start          # http://localhost:3000
+CI=true npm test   # 3 tests: the page renders, project and demo links
 CI=true npm run build   # production build in build/
 ```
 

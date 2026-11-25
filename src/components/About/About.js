@@ -25,7 +25,7 @@ const About = () => {
         >
           <img
             src={photo}
-            alt="Your professional headshot"
+            alt="Nityashree S"
             className={styles.profileImage}
           />
         </motion.div>

@@ -7,7 +7,7 @@ import styles from './Contact.module.css';
 
 const contactLinks = [
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/nityashree-s-b34b1b291', icon: faLinkedin },
-  { name: 'Email', url: 'mailto:nitya08shree@gmail.com', icon: faEnvelope },
+  { name: 'Email', url: 'mailto:nityashreesundararajan@gmail.com', icon: faEnvelope },
   { name: 'Github', url: 'https://github.com/Nityaa08', icon: faGithub },
 ];
 
@@ -105,7 +105,7 @@ const Contact = () => {
                       color: 'transparent',
                     }}
                   >
-                    nitya08shree@gmail.com
+                    nityashreesundararajan@gmail.com
                   </div>
                 )}
               </motion.a>
