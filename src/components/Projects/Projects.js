@@ -4,11 +4,20 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
+    title: 'Invoice Agent — Accounts-Payable Agent with Human Review',
+    description:
+      'LangGraph agent that reads an invoice (PDF, photo or scan), extracts it into a strict schema, matches the vendor and runs 13 validation rules in plain code; anything that fails goes to a person through interrupt(). Batch processing with CSV/JSON export, an MCP server, labelled evals and a red-team log.',
+    tech: ['Python', 'LangGraph', 'FastAPI', 'Pydantic', 'MCP'],
+    github: 'https://github.com/Nityaa08/invoice-agent',
+    demo: 'https://invoice.nityashree.in',
+  },
+  {
     title: 'Meridian — Multi-Agent Research Intelligence API',
     description:
       'Five-stage research pipeline: an LLM splits a question into sub-questions, searches run concurrently, local embeddings rank the passages, an LLM critic notes gaps and contradictions, and the report streams live over SSE.',
     tech: ['Python', 'FastAPI', 'asyncio', 'Groq API', 'SQLAlchemy', 'NumPy'],
     github: 'https://github.com/Nityaa08/meridian',
+    demo: 'https://meridian.nityashree.in',
   },
   {
     title: 'Smart Router — LLM Cost-Control Gateway',
@@ -16,6 +25,7 @@ const projects = [
       'OpenAI-compatible gateway that routes each prompt to one of three model tiers using hand-written rules. Logs tokens, estimated cost, latency and tier per request in PostgreSQL, and serves repeated prompts from a Redis cache.',
     tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
     github: 'https://github.com/Nityaa08/smart-router',
+    demo: 'https://router.nityashree.in',
   },
   {
     title: 'Cross-Border Fee Calculation API',
@@ -23,6 +33,7 @@ const projects = [
       'REST API that gives an itemised estimate of the all-in customer price for cross-border B2B payments in Latin America: FX spread, local taxes and provider fees, from configured rates kept separate from the calculation engine.',
     tech: ['TypeScript', 'Node.js', 'Express'],
     github: 'https://github.com/Nityaa08/cross-border-fee-api',
+    demo: 'https://fees.nityashree.in',
   },
   {
     title: 'Transaction Pattern Explorer — Fraud Analytics Dashboard',
@@ -30,6 +41,14 @@ const projects = [
       'Fraud analytics dashboard for risk analysts, built on synthetic data: interactive filters, time-series charts, rule-based pattern flags and drill-down on flagged transactions.',
     tech: ['Next.js', 'React', 'TypeScript'],
     github: 'https://github.com/Nityaa08/fraud-pattern-explorer',
+    demo: 'https://fraud.nityashree.in',
+  },
+  {
+    title: 'Speech Emotion Classifier',
+    description:
+      'CNN over log-mel spectrograms that labels a speech clip angry, happy, neutral or sad, trained on RAVDESS and compared with a random-forest baseline on MFCCs (71.1% vs 68.1% test accuracy), with a Gradio demo.',
+    tech: ['Python', 'TensorFlow', 'librosa', 'Gradio'],
+    github: 'https://github.com/Nityaa08/emotion-classifier',
   },
   {
     title: 'AI Image Caption Generator',
@@ -57,17 +76,14 @@ const projects = [
   },
   {
     title: 'Personal Portfolio Website',
-    description: 'Created and deployed this portfolio site with React, CSS Modules and Framer Motion animations. It showcases my experience, projects and contact links.',
+    description: 'This earlier portfolio, built with React, CSS Modules and Framer Motion animations. My current portfolio is at nityashree.in.',
     tech: ['React', 'TypeScript', 'Framer Motion'],
-    github: 'https://github.com/Nityaa08/Personal-Website',
+    github: 'https://github.com/Nityaa08/personal-website',
+    demo: 'https://nityashree.in',
   },
 ];
 
 const Projects = () => {
-  const handleCardClick = (url) => {
-    window.open(url, '_blank');
-  };
-
   return (
     <section id="projects" className={styles.projects}>
       <motion.h2
@@ -81,9 +97,8 @@ const Projects = () => {
       <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
           <motion.div
-            key={index}
+            key={project.github}
             className={`${styles.projectCard}`}
-            onClick={() => handleCardClick(project.github)}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -92,11 +107,21 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className={styles.techStack}>
-              {project.tech.map((tech, i) => (
-                <span key={i} className={styles.techPill}>{tech}</span>
+              {project.tech.map((tech) => (
+                <span key={tech} className={styles.techPill}>{tech}</span>
               ))}
             </div>
-            <p className={styles.githubLink}>View on GitHub</p>
+            {/* Real links, so keyboard and screen-reader users can open them too. */}
+            <p className={styles.links}>
+              {project.demo && (
+                <a className={styles.githubLink} href={project.demo} target="_blank" rel="noopener noreferrer">
+                  Live demo
+                </a>
+              )}
+              <a className={styles.githubLink} href={project.github} target="_blank" rel="noopener noreferrer">
+                View on GitHub
+              </a>
+            </p>
           </motion.div>
         ))}
       </div>
